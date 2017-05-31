@@ -1,8 +1,8 @@
-var triangle1Area = getTriangleArea(10, -15);
-var triangle2Area = getTriangleArea(0, 5);
-var triangle3Area = getTriangleArea(40, 25);
+var triangle1Area = getTriangleArea(10, -15),
+triangle2Area = getTriangleArea(0, 5),
+triangle3Area = getTriangleArea(40, 25);
 
-function getTriangleArea(a, h) {
+function getTriangleArea(a, h) {    
     if (a <= 0 || h <= 0){
        return('Nieprawidłowe dane');        
     }else{
