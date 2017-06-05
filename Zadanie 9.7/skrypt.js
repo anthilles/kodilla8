@@ -79,6 +79,11 @@ function getComputerPick() {
     return possiblePicks[Math.floor(Math.random()*3)];
 }
 
+function end(){    
+        gameState = 'ended';
+        setGameElements();
+}
+
 function checkRoundWinner(playerPick, computerPick) {
   playerResultElem.innerHTML = computerResultElem.innerHTML = '';
 
@@ -106,9 +111,12 @@ function checkRoundWinner(playerPick, computerPick) {
     
     if (player.score == 2) {
         alert('Wygrał gracz');
+        end();
     }else if (computer.score == 2){
         alert('Wygrał komputer');
+        end();
     }
 
 }
+
 
